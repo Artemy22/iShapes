@@ -1,8 +1,10 @@
 <?php
 
-namespace src\ishapes\Shapes;
+namespace src\Shapes;
 
-use InterfaceS\iShape;
+require __DIR__ . '/../../vendor/autoload.php';
+
+use src\InterfaceS\iShape;
 
 class Rectangle implements iShape
 {

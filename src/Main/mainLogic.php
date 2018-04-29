@@ -24,13 +24,13 @@ require __DIR__ . '/../../vendor/autoload.php';
 
 
 try {
-   $triangle = new src\ishapes\Shapes\Triangle(1,2,9);
+   $triangle = new src\Shapes\Triangle(1,2,9);
 
-    $sphere = new src\ishapes\Shapes\Sphere(4);
+    $sphere = new src\Shapes\Sphere(4);
 
-    $rectangle = new src\ishapes\Shapes\Rectangle(2, 6);
+    $rectangle = new src\Shapes\Rectangle(2, 6);
 
-    $square = new src\ishapes\Shapes\Square(8, 8);
+    $square = new src\Shapes\Square(8, 8);
 } catch (\Exception $exception) {
 
     echo '<pre>' . $exception->getMessage() . "</pre><br>";

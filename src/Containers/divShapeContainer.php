@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ai
- * Date: 26.04.18
- * Time: 19:24
- */
 
-namespace Containers;
+namespace src\Containers;
+require __DIR__ . '/../../vendor/autoload.php';
 
 
 class divShapeContainer implements iShape

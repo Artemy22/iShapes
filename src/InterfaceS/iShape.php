@@ -1,11 +1,8 @@
 <?php
-namespace InterfaceS;
-/**
- * Created by PhpStorm.
- * User: ai
- * Date: 25.04.18
- * Time: 16:42
- */
+namespace src\InterfaceS;
+
+require __DIR__ . '/../../vendor/autoload.php';
+
 interface iShape
 {
     public function getPerimeter(): float;

@@ -1,13 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ai
- * Date: 26.04.18
- * Time: 20:00
- */
 
-namespace Containers;
 
+namespace src\Containers;
+
+require __DIR__ . '/../../vendor/autoload.php';
 
 class shapeContainer implements iShape
 {
