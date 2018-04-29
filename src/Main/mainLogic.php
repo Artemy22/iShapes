@@ -32,7 +32,7 @@ try {
 
     $square = new src\ishapes\Shapes\Square(8, 8);
 } catch (\Exception $exception) {
+
     echo '<pre>' . $exception->getMessage() . "</pre><br>";
+
 }
-
-
