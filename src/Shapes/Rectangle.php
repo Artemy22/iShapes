@@ -4,7 +4,7 @@ namespace src\ishapes\Shapes;
 
 use InterfaceS\iShape;
 
-class Rectangle
+class Rectangle implements iShape
 {
 
     /** @var float */
