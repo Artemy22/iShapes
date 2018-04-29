@@ -1,0 +1,15 @@
+{
+  "name": "root/ishapes",
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Atrem",
+      "email": "artem.ivanov@sandsiv.com"
+    }
+  ],
+  "require": {}
+}
