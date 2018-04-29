@@ -17,7 +17,7 @@ spl_autoload_register('myAutoload');
 
 */
 
-echo "Get git";
+
 require __DIR__ . '/../../vendor/autoload.php';
 
 try {
