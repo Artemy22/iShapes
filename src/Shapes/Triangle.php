@@ -85,4 +85,9 @@ class Triangle implements IShape
 
         return sqrt($p * ($p - $this->sideA) * ($p - $this->sideB) * ($p - $this->sideC));
     }
+
+    /*public function getName(): string
+    {
+        return 'MEGA TRIANGLE !!!';
+    }*/
 }
