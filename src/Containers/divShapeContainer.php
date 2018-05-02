@@ -1,10 +1,20 @@
 <?php
 
 namespace src\Containers;
-require __DIR__ . '/../../vendor/autoload.php';
 
 
-class divShapeContainer implements iShape
+use InterfaceS\IShape;
+
+
+class divShapeContainer implements IShape
 {
+    public function getPerimeter(): float
+    {
+           // TODO: Implement getPerimeter() method.
+    }
 
+    public function getSquare(): float
+    {
+            // TODO: Implement getSquare() method.
+    }
 }

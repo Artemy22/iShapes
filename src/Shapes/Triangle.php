@@ -1,15 +1,13 @@
 <?php
 
 
-namespace src\Shapes;
+namespace Shapes;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
-use src\InterfaceS\iShape;
+use InterfaceS\IShape;
 /**
  * Реализация интерфейса
  */
-class Triangle implements iShape
+class Triangle implements IShape
 {
     /** @var float */
     protected $sideA;

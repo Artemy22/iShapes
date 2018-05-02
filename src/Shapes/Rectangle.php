@@ -1,12 +1,10 @@
 <?php
 
-namespace src\Shapes;
+namespace Shapes;
 
-require __DIR__ . '/../../vendor/autoload.php';
+use InterfaceS\IShape;
 
-use src\InterfaceS\iShape;
-
-class Rectangle implements iShape
+class Rectangle implements IShape
 {
 
     /** @var float */

@@ -1,9 +1,8 @@
 <?php
-namespace src\InterfaceS;
 
-require __DIR__ . '/../../vendor/autoload.php';
+namespace InterfaceS;
 
-interface iShape
+interface IShape
 {
     public function getPerimeter(): float;
 
