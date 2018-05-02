@@ -3,6 +3,10 @@
 
 namespace Containers;
 
+error_reporting(E_ALL); // уровень отслеживаемых ошибок
+ini_set('display_errors', 1);  //выводить все ошибки в браузере
+
+
 use InterfaceS\IShape;
 
 class ShapeContainer implements IShape
@@ -27,3 +31,4 @@ class ShapeContainer implements IShape
         $this->shapesArray[] = $newShape;
     }
 }
+
