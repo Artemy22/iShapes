@@ -6,11 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Containers\\divShapeContainer' => $baseDir . '/src/Containers/divShapeContainer.php',
-    'Containers\\shapeContainer' => $baseDir . '/src/Containers/shapeContainer.php',
-    'InterfaceS\\iShape' => $baseDir . '/src/InterfaceS/iShape.php',
-    'src\\ishapes\\Shapes\\Rectangle' => $baseDir . '/src/Shapes/Rectangle.php',
-    'src\\ishapes\\Shapes\\Sphere' => $baseDir . '/src/Shapes/Sphere.php',
-    'src\\ishapes\\Shapes\\Square' => $baseDir . '/src/Shapes/Square.php',
-    'src\\ishapes\\Shapes\\Triangle' => $baseDir . '/src/Shapes/Triangle.php',
 );

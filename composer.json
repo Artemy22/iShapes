@@ -2,7 +2,7 @@
   "name": "root/ishapes",
   "autoload": {
     "psr-0": {
-      "": "src/"
+      "src\\": ""
     }
   },
   "authors": [
