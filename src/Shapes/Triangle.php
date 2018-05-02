@@ -95,7 +95,7 @@ class Triangle implements IShape
 
     public function getSquare(): float
     {
-        $p = 0.5 * ($this->sideA + $this->sideB + $this->sideC);
+        $p = ($this->sideA + $this->sideB + $this->sideC)/2;
 
         return sqrt($p * ($p - $this->sideA) * ($p - $this->sideB) * ($p - $this->sideC));
     }
