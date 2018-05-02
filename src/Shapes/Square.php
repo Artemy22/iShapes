@@ -3,12 +3,14 @@
 namespace Shapes;
 
 use InterfaceS\IShape;
+use Traits\StringableShape;
 
 /**
  * Реализация интерфейса
  */
 class Square implements IShape
 {
+    use StringableShape;
     /** @var float */
     protected $sideA;
 

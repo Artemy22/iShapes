@@ -3,10 +3,12 @@
 namespace Shapes;
 
 use InterfaceS\IShape;
+use Traits\StringableShape;
 
 class Sphere implements IShape
 
 {
+    use StringableShape;
     /** @var float */
     protected $sideR;
 

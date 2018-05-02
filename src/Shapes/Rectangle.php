@@ -3,10 +3,11 @@
 namespace Shapes;
 
 use InterfaceS\IShape;
+use Traits\StringableShape;
 
 class Rectangle implements IShape
 {
-
+    use StringableShape;
     /** @var float */
     protected $sideA;
 

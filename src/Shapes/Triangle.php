@@ -4,11 +4,15 @@
 namespace Shapes;
 
 use InterfaceS\IShape;
+use Traits\StringableShape;
+
 /**
  * Реализация интерфейса
  */
 class Triangle implements IShape
 {
+    use StringableShape;
+
     /** @var float */
     protected $sideA;
 
@@ -95,7 +99,7 @@ class Triangle implements IShape
 
     public function getSquare(): float
     {
-        $p = ($this->sideA + $this->sideB + $this->sideC)/2;
+        $p = ($this->sideA + $this->sideB + $this->sideC) / 2;
 
         return sqrt($p * ($p - $this->sideA) * ($p - $this->sideB) * ($p - $this->sideC));
     }
