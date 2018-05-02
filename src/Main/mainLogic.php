@@ -17,8 +17,13 @@ echo $rectangle1;
 $square1 = new Shapes\Square(8, 8);
 echo $square1;
 
-// $container1 = new DivShapeContainer();
-// $container2 = new ShapeContainer();
+$container1 = new DivShapeContainer($triangle1, $sphere1);
+foreach ($container1 as $key => $value) {
+    echo $key." =>> ".$value;
+}
+echo "Разница в площадях: ".$container1->getSquare();
+echo "<br>";
+echo "Разница в периметрах: ".$container1->getPerimeter();
+$container2 = new ShapeContainer();
 
-// $container2->addShape();
-// print_r($container2);
+$container2->addShape($triangle1);

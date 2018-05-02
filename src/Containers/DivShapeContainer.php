@@ -6,11 +6,11 @@ use Shapes\IShape;
 
 class DivShapeContainer implements IShape
 {
-    /** @var IShape*/
-    private $shape1;
+    /** @var IShape */
+    public $shape1;
 
     /** @var  IShape */
-    private $shape2;
+    public $shape2;
 
     /**
      * DivShapeContainer constructor.
@@ -23,13 +23,20 @@ class DivShapeContainer implements IShape
         $this->shape2 = $shape2;
     }
 
+    /**
+     * @return float
+     */
+
     public function getPerimeter(): float
     {
-
+        $shapeDifPer = $this->shape1->getPerimeter() - $this->shape2->getPerimeter();
+        return $shapeDifPer;
     }
+
 
     public function getSquare(): float
     {
-
+        $shapeDifSq = $this->shape1->getSquare() - $this->shape2->getSquare();
+        return $shapeDifSq;
     }
 }
