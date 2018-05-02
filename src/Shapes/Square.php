@@ -2,7 +2,6 @@
 
 namespace Shapes;
 
-use InterfaceS\IShape;
 use Traits\StringableShape;
 
 /**
@@ -11,6 +10,7 @@ use Traits\StringableShape;
 class Square implements IShape
 {
     use StringableShape;
+
     /** @var float */
     protected $sideA;
 

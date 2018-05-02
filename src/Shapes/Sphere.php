@@ -2,7 +2,6 @@
 
 namespace Shapes;
 
-use InterfaceS\IShape;
 use Traits\StringableShape;
 
 class Sphere implements IShape

@@ -3,7 +3,6 @@
 
 namespace Shapes;
 
-use InterfaceS\IShape;
 use Traits\StringableShape;
 
 /**
@@ -35,18 +34,11 @@ class Triangle implements IShape
         $this->sideC = $sideC;
     }
 
-    /**
-     * @return float
-     */
     public function getSideA(): float
     {
         return $this->sideA;
     }
 
-    /**
-     * @param float $sideA
-     * @return Triangle
-     */
     public function setSideA(float $sideA): Triangle
     {
         $this->sideA = $sideA;
@@ -54,18 +46,11 @@ class Triangle implements IShape
         return $this;
     }
 
-    /**
-     * @return float
-     */
     public function getSideB(): float
     {
         return $this->sideB;
     }
 
-    /**
-     * @param float $sideB
-     * @return Triangle
-     */
     public function setSideB(float $sideB): Triangle
     {
         $this->sideB = $sideB;
@@ -73,9 +58,6 @@ class Triangle implements IShape
         return $this;
     }
 
-    /**
-     * @return float
-     */
     public function getSideC(): float
     {
         return $this->sideC;

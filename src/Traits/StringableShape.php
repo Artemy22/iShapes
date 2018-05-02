@@ -2,7 +2,7 @@
 
 namespace Traits;
 
-use InterfaceS\IShape;
+use Shapes\IShape;
 
 trait StringableShape
 {
