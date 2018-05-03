@@ -4,13 +4,21 @@ namespace Containers;
 
 use Shapes\IShape;
 
-
 class ShapeContainer implements IShape
 {
     /**
      * @var IShape[]
      */
-    public $shapesArray = [];
+    protected $shapesArray = [];
+
+    /**
+     * @return IShape[]
+     */
+    public function getShapes(): array
+    {
+        return $this->shapesArray;
+    }
+
 
     public function addShape(IShape $newShape)
     {
@@ -19,12 +27,22 @@ class ShapeContainer implements IShape
 
     public function getPerimeter(): float
     {
-        // TODO: Implement getPerimeter() method.
+        $sumPerimeter = 0;
+        foreach ($this->shapesArray as $shape) {
+            $sumPerimeter += $shape->getPerimeter();
+        }
+
+        return $sumPerimeter;
     }
 
     public function getSquare(): float
     {
-        // TODO: Implement getSquare() method.
+        $sumSquare = 0;
+        foreach ($this->shapesArray as $shape) {
+            $sumSquare += $shape->getSquare();
+        }
+
+        return $sumSquare;
     }
 
     public function getName(): string

@@ -22,10 +22,10 @@ trait StringableShape
 
 
         return '
-<table style="background: antiquewhite" border cellspacing="0">
-<tr style="background: gray">
+<table style="background: black" border cellspacing="0">
+<tr style="background: ghostwhite">
 <th width = "150px" align="left">Тип фигуры</th><td width = "100px">'.$getName.'</td>
-<th width = "150px" align="left">Периметер фигуры</th><td width = "100px" align="center">'.round($getPerimeter ).'</td>
+<th width = "150px" align="left">Периметер фигуры</th><td width = "100px" align="center">'.round($getPerimeter).'</td>
 <th width = "150px" align="left">Площадь фигуры:</th><td width = "100px" align="center">'.round($getSquare).'</td>
 </tr></table>';
     }
