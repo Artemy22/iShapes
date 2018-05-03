@@ -39,4 +39,10 @@ class DivShapeContainer implements IShape
         $shapeDifSq = $this->shape1->getSquare() - $this->shape2->getSquare();
         return $shapeDifSq;
     }
+
+    public function getName(): string
+    {
+        return "CD"; // TODO: Implement getName() method.
+    }
+
 }

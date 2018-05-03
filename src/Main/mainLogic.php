@@ -14,6 +14,8 @@ $sphere1 = new Shapes\Sphere(4);
 
 $rectangle1 = new Shapes\Rectangle(2, 6);
 
+$rectangle2 = new Shapes\Rectangle(22, 16);
+
 $square1 = new Shapes\Square(8, 8);
 
 
@@ -31,6 +33,7 @@ $container2->addShape($triangle1);
 $container2->addShape($square1);
 $container2->addShape($sphere1);
 $container2->addShape($rectangle1);
+$container2->addShape($rectangle2);
 
 foreach ($container2 as $key => $value) {
     foreach ($value as $key1 => $value1) {

@@ -16,6 +16,17 @@ trait StringableShape
     public function __toString()
     {
         /** @var IShape $this */
-        return  "<table style='background: antiquewhite' border='1'><tr style='background: green'><th>".$this->getName()."</th><th>Периметр:</th><th>".$this->getPerimeter()."</th><th>Площадь:</th><th>".$this->getSquare()."</th></tr>";
+        $getName = $this->getName();
+        $getPerimeter = $this->getPerimeter();
+        $getSquare = $this->getSquare();
+
+
+        return '
+<table style="background: antiquewhite" border cellspacing="0">
+<tr style="background: gray">
+<th width = "150px" align="left">Тип фигуры</th><td width = "100px">'.$getName.'</td>
+<th width = "150px" align="left">Периметер фигуры</th><td width = "100px" align="center">'.round($getPerimeter ).'</td>
+<th width = "150px" align="left">Площадь фигуры:</th><td width = "100px" align="center">'.round($getSquare).'</td>
+</tr></table>';
     }
 }
